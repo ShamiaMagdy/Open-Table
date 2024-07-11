@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAE8362F-60F6-4114-A093-6942CFDB3991}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Open_Table_Project</RootNamespace>
+    <AssemblyName>Open_Table_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>D:\Bunifu ui\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\app\ESCA\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cristal1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cristal1.Designer.cs">
+      <DependentUpon>Cristal1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customer_crystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_crystal.Designer.cs">
+      <DependentUpon>Customer_crystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback_crystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback_crystal.Designer.cs">
+      <DependentUpon>Feedback_crystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feedback_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feedback_frm.Designer.cs">
+      <DependentUpon>feedback_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_frm.Designer.cs">
+      <DependentUpon>Login_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_frm.Designer.cs">
+      <DependentUpon>Manager_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_Login_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_Login_frm.Designer.cs">
+      <DependentUpon>Manager_Login_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_frm.Designer.cs">
+      <DependentUpon>Menu_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register_frm.Designer.cs">
+      <DependentUpon>Register_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurants.Designer.cs">
+      <DependentUpon>Restaurants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="restaurant_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restaurant_frm.Designer.cs">
+      <DependentUpon>restaurant_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="restaurant_manager_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="restaurant_manager_frm.Designer.cs">
+      <DependentUpon>restaurant_manager_frm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cristal1.resx">
+      <DependentUpon>Cristal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_crystal.resx">
+      <DependentUpon>Customer_crystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback_crystal.resx">
+      <DependentUpon>Feedback_crystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feedback_frm.resx">
+      <DependentUpon>feedback_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_frm.resx">
+      <DependentUpon>Login_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_frm.resx">
+      <DependentUpon>Manager_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_Login_frm.resx">
+      <DependentUpon>Manager_Login_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_frm.resx">
+      <DependentUpon>Menu_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register_frm.resx">
+      <DependentUpon>Register_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurants.resx">
+      <DependentUpon>Restaurants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restaurant_frm.resx">
+      <DependentUpon>restaurant_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restaurant_manager_frm.resx">
+      <DependentUpon>restaurant_manager_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picture16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
